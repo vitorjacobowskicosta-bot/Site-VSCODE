@@ -1,0 +1,61 @@
+header {
+    background-color: #183C63;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+article {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+/* ⬇️ ALTERADO: Ajustado para destacar a imagem e evitar distorções ⬇️ */
+article img {
+    width: 120px;          /* Aumentado para o texto não ficar esmagado */
+    height: 120px;         /* Mantido quadrado ou redondo proporcional */
+    margin-right: 20px;    
+    border-radius: 8px;    /* Mudado para cantos arredondados (quadrada). Se preferir redonda, use 50% */
+    object-fit: cover;     /* NÃO deixa a foto esticar ou distorcer quando carregar */
+    background-color: #eee;/* Fundo cinza caso a imagem demore ou falhe */
+}
+
+article div {
+    flex-grow: 1;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: #555;
+}
+
+button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button span {
+    margin-left: 5px;
+    font-weight: bold;
+}
